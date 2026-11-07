@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The Couton Foundation supports animal welfare and environmental protection, working toward a kinder, healthier planet for all.">
+  <meta name="theme-color" content="#0b2b45">
+  <title>The Couton Foundation | For Animals. For Our Environment.</title>
+  <style>
+    :root{--navy:#0b2b45;--blue:#1478b9;--gold:#c9a45c;--cream:#f7f4ed;--ink:#18334a;--muted:#647789;--white:#fff}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--cream);line-height:1.65}
+    a{color:inherit} .wrap{width:min(1160px,calc(100% - 44px));margin:auto}
+    header{position:sticky;top:0;z-index:10;background:rgba(11,43,69,.97);color:white;box-shadow:0 8px 24px #061a2a22}
+    .nav{min-height:88px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:14px;text-decoration:none;min-width:235px}
+    .brand img{width:66px;height:66px;object-fit:contain;background:#fff;border-radius:50%;padding:3px}
+    .brand span{font-family:Georgia,serif;font-size:21px;line-height:1.08;letter-spacing:.04em}
+    nav{display:flex;align-items:center;gap:25px;font-size:14px}
+    nav a{text-decoration:none;color:#f7f4ed;opacity:.94} nav a:hover{color:#e5c47e}
+    .btn{display:inline-block;text-decoration:none;border:0;border-radius:999px;padding:13px 23px;background:var(--gold);color:#102b40;font-weight:700;letter-spacing:.02em;cursor:pointer}
+    .btn:hover{filter:brightness(1.07);transform:translateY(-1px)}
+    .hero{position:relative;min-height:590px;display:grid;align-items:center;color:white;background:linear-gradient(90deg,rgba(5,27,45,.82),rgba(5,27,45,.32)),url('https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=2000&q=85') center/cover}
+    .hero-copy{max-width:680px;padding:90px 0}
+    .eyebrow{text-transform:uppercase;letter-spacing:.2em;font-size:12px;color:#e7c67d;font-weight:700}
+    h1,h2,h3{font-family:Georgia,'Times New Roman',serif;font-weight:400;line-height:1.12}
+    h1{font-size:clamp(42px,6vw,76px);margin:18px 0}
+    .hero p{font-size:19px;max-width:600px;color:#f4f2ed}
+    .hero .btn{margin-top:18px}
+    .pillars{background:var(--navy);color:white;padding:30px 0}
+    .pillar-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .pillar{padding:8px 14px;border-right:1px solid #ffffff33}.pillar:last-child{border:0}
+    .pillar strong{display:block;color:#e5c47e;font-family:Georgia,serif;font-size:18px;font-weight:400}
+    .pillar span{font-size:13px;color:#d9e1e8}
+    section{padding:88px 0}
+    .intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+    h2{font-size:clamp(34px,4vw,51px);margin:12px 0 20px;color:var(--navy)}
+    .lead{font-family:Georgia,serif;font-size:21px;color:#38536a}
+    .photo-card{min-height:390px;border-radius:4px;background:url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=85') center/cover;box-shadow:18px 18px 0 #e7dfce}
+    .causes{background:#fff}
+    .center{text-align:center;max-width:760px;margin:0 auto 42px}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    .card{background:var(--cream);padding:0 0 25px;border:1px solid #e9e3d7}
+    .card img{width:100%;height:210px;object-fit:cover;display:block}
+    .card div{padding:20px 22px}
+    .card h3{font-size:25px;color:var(--navy);margin:0 0 10px}
+    .impact{background:var(--navy);color:#fff}
+    .impact h2{color:#fff}.impact p{color:#dbe4eb}
+    .impact-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+    .impact-art{height:330px;background:url('https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=85') center/cover}
+    .donate{background:#eae3d5;text-align:center}
+    .donate .center{margin-bottom:20px}
+    .donate p{max-width:680px;margin:0 auto 25px;color:#455c6d}
+    .note{font-size:13px;color:#637484;margin-top:14px}
+    .contact{background:#fff}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px}
+    footer{background:#071f33;color:#dce5eb;padding:35px 0;font-size:13px}
+    .foot{display:flex;justify-content:space-between;gap:20px;align-items:center}
+    .foot a{color:#e7c67d}
+    @media(max-width:850px){.nav{flex-wrap:wrap;padding:12px 0}.brand{min-width:0}nav{order:3;width:100%;overflow:auto;padding:5px 0 10px;gap:18px}.pillar-grid{grid-template-columns:1fr 1fr}.pillar:nth-child(2){border:0}.intro-grid,.impact-grid,.contact-grid{grid-template-columns:1fr;gap:30px}.cards{grid-template-columns:1fr 1fr}}
+    @media(max-width:560px){.wrap{width:min(100% - 30px,1160px)}.hero{min-height:540px}.hero-copy{padding:65px 0}.pillar-grid,.cards{grid-template-columns:1fr}.pillar{border-right:0;border-bottom:1px solid #ffffff33;padding:12px 0}.foot{display:block}.foot>*{display:block;margin:8px 0}section{padding:65px 0}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home" aria-label="The Couton Foundation home">
+      <img src="assets/couton-foundation-logo.jpg" alt="The Couton Foundation logo">
+      <span>THE COUTON<br>FOUNDATION</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#about">Our Purpose</a><a href="#causes">Our Causes</a><a href="#impact">Our Approach</a><a href="#donate">Donate</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="btn" href="#donate">Support Our Mission</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="wrap">
+      <div class="hero-copy">
+        <div class="eyebrow">The Couton Foundation</div>
+        <h1>For animals.<br>For our environment.<br>For a better tomorrow.</h1>
+        <p>Advancing compassion for all animals and protecting the natural world we share.</p>
+        <a class="btn" href="#about">Discover Our Purpose</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="pillars">
+    <div class="wrap pillar-grid">
+      <div class="pillar"><strong>Animal Welfare</strong><span>Compassion for every creature.</span></div>
+      <div class="pillar"><strong>Wildlife & Conservation</strong><span>Protecting species and habitats.</span></div>
+      <div class="pillar"><strong>Healthy Ecosystems</strong><span>Care for oceans, waterways and forests.</span></div>
+      <div class="pillar"><strong>A Sustainable Future</strong><span>Environmental awareness and action.</span></div>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="wrap intro-grid">
+      <div>
+        <div class="eyebrow">Our purpose</div>
+        <h2>A kinder world begins with care.</h2>
+        <p class="lead">The Couton Foundation is committed to animal welfare and environmental protection — because the well-being of animals, people, and the planet are deeply connected.</p>
+        <p>Our areas of interest span domestic animals, wildlife, and endangered species, alongside the conservation of natural habitats, oceans, waterways, and forests. We also support greater awareness of pollution and climate-related challenges.</p>
+        <p>We believe meaningful progress grows through compassion, responsible stewardship, and collaboration.</p>
+      </div>
+      <div class="photo-card" role="img" aria-label="Sunlight filtering through a forest"></div>
+    </div>
+  </section>
+
+  <section class="causes" id="causes">
+    <div class="wrap">
+      <div class="center">
+        <div class="eyebrow">What we care about</div>
+        <h2>One mission. Many ways to make a difference.</h2>
+        <p>Our broad mission embraces animals and the natural systems that sustain life.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1551717743-49959800b1f6?auto=format&fit=crop&w=900&q=85" alt="A dog outdoors">
+          <div><h3>Domestic Animal Welfare</h3><p>Supporting compassion for companion animals, including dogs and cats, and the shelters and rescue efforts that care for them.</p></div>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1535338454770-8be927b5a00b?auto=format&fit=crop&w=900&q=85" alt="Wildlife in a natural habitat">
+          <div><h3>Wildlife & Endangered Species</h3><p>Recognizing the importance of protecting wildlife, biodiversity, and the habitats animals need to thrive.</p></div>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=900&q=85" alt="Green forest and mountain landscape">
+          <div><h3>Environmental Protection</h3><p>Promoting care for forests, oceans, waterways, natural habitats, and a cleaner, more sustainable environment.</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="impact" id="impact">
+    <div class="wrap impact-grid">
+      <div>
+        <div class="eyebrow">Our approach</div>
+        <h2>Protecting what matters, together.</h2>
+        <p>We aim to encourage practical action, build awareness, and support efforts that make a positive difference for animals and the environment.</p>
+        <p>As the foundation's work develops, this space can share verified projects, partnerships, milestones, and measurable outcomes.</p>
+      </div>
+      <div class="impact-art" role="img" aria-label="A thriving green forest"></div>
+    </div>
+  </section>
+
+  <section class="donate" id="donate">
+    <div class="wrap center">
+      <div class="eyebrow">Support the mission</div>
+      <h2>Your generosity can help create change.</h2>
+      <p>Interested in supporting animal welfare and environmental protection? We welcome conversations with donors, volunteers, and potential partners.</p>
+      <a class="btn" href="#contact">Ask About Giving</a>
+      <div class="note">Online donations can be enabled here once your preferred donation processor and account are connected.</div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap contact-grid">
+      <div>
+        <div class="eyebrow">Get in touch</div>
+        <h2>Let's make a difference.</h2>
+        <p>For partnership, charitable support, volunteer, or general inquiries, please reach out to The Couton Foundation.</p>
+      </div>
+      <div>
+        <h3>Contact information</h3>
+        <p><strong>Website:</strong> <a href="https://www.thecoutonfoundation.org">thecoutonfoundation.org</a></p>
+        <p><strong>Email:</strong> Add your foundation's preferred public email address here.</p>
+        <p><strong>Social media:</strong> Add your official social links here.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>© <span id="year"></span> The Couton Foundation. All rights reserved.</div>
+    <div>For animals. For our environment. For a better tomorrow.</div>
+    <div><a href="#home">Back to top ↑</a></div>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
