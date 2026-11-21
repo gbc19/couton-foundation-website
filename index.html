@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="The Couton Foundation supports pollution prevention and cleanup, ocean and habitat conservation, and the welfare of domestic animals and wildlife.">
+  <link rel="icon" type="image/jpeg" href="assets/couton-foundation-logo.jpg">
   <meta name="theme-color" content="#3679a5">
   <title>The Couton Foundation | Environmental Protection &amp; Animal Welfare</title>
   <style>
@@ -15,7 +16,7 @@
     .brand{display:flex;align-items:center;gap:14px;text-decoration:none;min-width:235px}
     .brand img{width:78px;height:78px;flex:none;object-fit:contain;background:#fff;border-radius:50%;padding:3px}
     .brand span{font-family:Georgia,serif;font-size:21px;line-height:1.08;letter-spacing:.04em}
-    nav{display:flex;align-items:center;gap:25px;font-size:14px}
+    nav{display:flex;align-items:center;gap:25px;font-size:16px}
     nav a{text-decoration:none;color:#f7f4ed;opacity:.94} nav a:hover{color:#e5c47e}
     .btn{display:inline-block;text-decoration:none;border:0;border-radius:999px;padding:13px 23px;background:var(--gold);color:#102b40;font-weight:700;letter-spacing:.02em;cursor:pointer}
     .btn:hover{filter:brightness(1.07);transform:translateY(-1px)}
@@ -48,12 +49,13 @@
     .impact-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
     .impact-art{height:330px;background:url('https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=85') center/cover}
     .contact{background:#fff}
+    .contact a[href^="mailto:"]{text-decoration:none}
     .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px}
     footer{background:#2b648b;color:#dce5eb;padding:35px 0;font-size:13px}
-    .foot{display:flex;justify-content:space-between;gap:20px;align-items:center}
+    .foot{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;align-items:center;text-align:center}
     .foot a{color:#e7c67d}
     @media(max-width:850px){.nav{flex-wrap:wrap;padding:12px 0}.brand{min-width:0}nav{order:3;width:100%;overflow:auto;padding:5px 0 10px;gap:18px}.pillar-grid{grid-template-columns:1fr 1fr}.pillar:nth-child(2){border:0}.intro-grid,.impact-grid,.contact-grid{grid-template-columns:1fr;gap:30px}.cards{grid-template-columns:1fr 1fr}}
-    @media(max-width:560px){.wrap{width:min(100% - 30px,1160px)}.hero{min-height:540px}.hero-copy{padding:65px 0}.pillar-grid,.cards{grid-template-columns:1fr}.pillar{border-right:0;border-bottom:1px solid #ffffff33;padding:12px 0}.foot{display:block}.foot>*{display:block;margin:8px 0}section{padding:65px 0}}
+    @media(max-width:560px){.wrap{width:min(100% - 30px,1160px)}.hero{min-height:540px}.hero-copy{padding:65px 0}.pillar-grid,.cards{grid-template-columns:1fr}.pillar{border-right:0;border-bottom:1px solid #ffffff33;padding:12px 0}.foot{grid-template-columns:1fr;gap:16px}section{padding:65px 0}}
   </style>
 </head>
 <body>
