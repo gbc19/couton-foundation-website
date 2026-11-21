@@ -55,6 +55,8 @@
     .foot{width:calc(100% - 64px);display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:24px;align-items:center}
     .foot> :first-child{justify-self:start;text-align:left}
     .foot> :last-child{justify-self:end;text-align:right}
+    .footer-logo{width:260px;max-width:100%;justify-self:center}
+    .footer-logo img{display:block;width:100%;height:auto}
     .foot a{color:#e7c67d}
     @media(max-width:850px){.nav{flex-wrap:wrap;padding:12px 0}.brand{min-width:0}nav{order:3;width:100%;overflow:auto;padding:5px 0 10px;gap:18px}.pillar-grid{grid-template-columns:1fr 1fr}.pillar:nth-child(2){border:0}.intro-grid,.impact-grid,.contact-grid{grid-template-columns:1fr;gap:30px}.cards{grid-template-columns:1fr 1fr}}
     @media(max-width:560px){.wrap{width:min(100% - 30px,1160px)}.hero{min-height:540px}.hero-copy{padding:65px 0}.pillar-grid,.cards{grid-template-columns:1fr}.pillar{border-right:0;border-bottom:1px solid #ffffff33;padding:12px 0}.foot{width:calc(100% - 30px);grid-template-columns:1fr;gap:16px}.foot> :first-child,.foot> :last-child{justify-self:center;text-align:center}section{padding:65px 0}}
@@ -161,7 +163,7 @@
 <footer>
   <div class="wrap foot">
     <div>© <span id="year"></span> The Couton Foundation, Inc. All rights reserved.</div>
-    <div class="footer-logo"></div>
+    <div class="footer-logo"><img src="assets/couton-foundation-logo-horizontal.jpg" alt="The Couton Foundation" width="1920" height="757"></div>
     <div><a href="#home">Back to top ↑</a></div>
   </div>
 </footer>
